@@ -17,7 +17,7 @@ body{
 
 @media only screen and (min-width: 601px) {
     #adjective{
-        font-size: 5rem;
+        font-size: 4rem;
 
     }
   }
@@ -34,7 +34,12 @@ body{
 }
 
 #adjective::after {
-	content: attr(data-scroll-direction);
+    content: attr(data-scroll-direction);
+    transition-timing-function: ease-out;
+}
+
+#scenario::after{
+    content: attr(data-scroll-situation);
 }
 
 #scenario{
@@ -46,6 +51,4 @@ body{
     transform: translate(-50%, -50%);
 }
 
-#scenario::after{
-    content: attr(data-scroll-situation);
-}
+
