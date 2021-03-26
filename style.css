@@ -1,0 +1,51 @@
+html {
+    font-size-adjust: 62.5%;
+}
+
+body{
+    margin:0;
+    width: 100vw;
+    height: 110vh;
+    background: white;
+}
+@media only screen and (max-width: 600px) {
+    #adjective{
+        font-size: 1rem;
+
+    }
+  }
+
+@media only screen and (min-width: 601px) {
+    #adjective{
+        font-size: 5rem;
+
+    }
+  }
+
+
+#adjective{
+    
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#adjective::after {
+	content: attr(data-scroll-direction);
+}
+
+#scenario{
+    font-size: 2rem;
+    margin: 0;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#scenario::after{
+    content: attr(data-scroll-situation);
+}
